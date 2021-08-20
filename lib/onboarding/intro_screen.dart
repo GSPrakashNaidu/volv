@@ -193,7 +193,10 @@ class _IntroScreenState extends State<IntroScreen> {
             height: 40,
             margin: EdgeInsets.only(left: 40, right: 40),
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
