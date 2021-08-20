@@ -50,14 +50,20 @@ class _IntroScreenState extends State<IntroScreen> {
                           children: [
                             Image.asset(assetPathToIntro1),
                             SizedBox(height: 20),
-                            Text('Lorem Ipsum',
+                            Text(
+                                'Boeing 737 Max cleared to fly by the Federal Aviation Authority',
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold)),
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                             SizedBox(height: 20),
                             Text(
-                              'Lorem ipsum dolor sit\n amet, consectetur\n adipiscing elit',
+                              'Jeff Bezos named 16 environmental organizations as the first beneficiaries of '
+                              'his \$10B Earth fund. They will receive \$791M collectively. Bezos said he was '
+                              'inspired by the organizations\' work and added, "We can all protect Earth\'s " '
+                              '"future by taking bold action now." Why it matters? Less than 2% of global '
+                              'philanthropy is currently directed at solving climate change. As such, Bezos\' donations'
+                              'could be instrumental in tackling the climate crisis.',
                               style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.normal),
+                                  fontSize: 14, fontWeight: FontWeight.normal),
                               textAlign: TextAlign.center,
                             ),
                           ],
@@ -76,10 +82,22 @@ class _IntroScreenState extends State<IntroScreen> {
                           children: [
                             Image.asset(assetPathToIntro2),
                             SizedBox(height: 20),
-                            Text('dolor sit amet'),
+                            Text(
+                                'This vegan cheese claims to taste like real cheese',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                             SizedBox(height: 20),
                             Text(
-                              'sed do eiusmod tempor\n incididunt ut labore et\n dolore magna aliqua.',
+                              'While plant-based milk has become mainstream, '
+                              'vegan cheese has struggled to get as much endorsement '
+                              'as it\'s challenging to replicate the taste and texture '
+                              'of cheese made from cow milk. Israel-based startup Remilk is '
+                              'trying to offer a solution by creating lab-made dairy protein '
+                              'using microbial fermentation. The protein can help make a vegan, '
+                              'lactose-free, cholesterol-free cheese that tastes like milk cheese. '
+                              'The company recently completed an \$11.3M funding round.',
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.normal),
                               textAlign: TextAlign.center,
                             ),
                           ],
@@ -98,11 +116,22 @@ class _IntroScreenState extends State<IntroScreen> {
                           children: [
                             Image.asset(assetPathToIntro3),
                             SizedBox(height: 20),
-                            Text('consectetur adipiscing'),
+                            Text(
+                                '1 in 4 delivery workers say they have tried your food',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold)),
                             SizedBox(height: 20),
                             Text(
-                              'quis nostrud exercitation\n ullamco laboris nisi ut\n aliquip ex',
+                              '1-in-4 delivery workers admit they have tried your food, '
+                              'according to 500 delivery workers surveyed by US Foods. '
+                              '28% said they\'d "taken food from an order," while 54% revealed that '
+                              ' they\'ve been "tempted by the smell of the food." Adults who order online '
+                              ' suggested that restaurants use \'tamper-proof\' packaging to '
+                              'prevent deliverers from sampling food. This has raised a '
+                              'cause for concern as many rely on food delivery for sustenance.',
                               textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.normal),
                             ),
                           ],
                         ),
@@ -194,8 +223,8 @@ class _IntroScreenState extends State<IntroScreen> {
             margin: EdgeInsets.only(left: 40, right: 40),
             child: RaisedButton(
               onPressed: () {
-                Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()));
               },
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
