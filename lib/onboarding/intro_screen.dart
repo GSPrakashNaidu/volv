@@ -32,159 +32,174 @@ class _IntroScreenState extends State<IntroScreen> {
               : Colors.white60,
       body: Stack(
         children: [
-          Column(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              CarouselSlider(
-                carouselController: buttonCarouselController,
-                items: [
-                  Container(
-                    margin: EdgeInsets.only(top: 120),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            Image.asset(assetPathToIntro1),
-                            SizedBox(height: 20),
-                            Text(
-                                'Boeing 737 Max cleared to fly by the Federal Aviation Authority',
+          SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CarouselSlider(
+                  carouselController: buttonCarouselController,
+                  items: [
+                    Container(
+                      padding: EdgeInsets.only(top: 120),
+                      margin: EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Image.asset(assetPathToIntro1),
+                              SizedBox(height: 20),
+                              Text(
+                                  'Boeing 737 Max cleared to fly by the Federal Aviation Authority',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold)),
+                              SizedBox(height: 20),
+                              Text(
+                                'Jeff Bezos named 16 environmental organizations as the first beneficiaries of '
+                                'his \$10B Earth fund. They will receive \$791M collectively. Bezos said he was '
+                                'inspired by the organizations\' work and added, "We can all protect Earth\'s " '
+                                '"future by taking bold action now." Why it matters? Less than 2% of global '
+                                'philanthropy is currently directed at solving climate change. As such, Bezos\' donations'
+                                'could be instrumental in tackling the climate crisis.',
                                 style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold)),
-                            SizedBox(height: 20),
-                            Text(
-                              'Jeff Bezos named 16 environmental organizations as the first beneficiaries of '
-                              'his \$10B Earth fund. They will receive \$791M collectively. Bezos said he was '
-                              'inspired by the organizations\' work and added, "We can all protect Earth\'s " '
-                              '"future by taking bold action now." Why it matters? Less than 2% of global '
-                              'philanthropy is currently directed at solving climate change. As such, Bezos\' donations'
-                              'could be instrumental in tackling the climate crisis.',
-                              style: TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.normal),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        ),
-                      ],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal),
+                                textAlign: TextAlign.justify,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(top: 120),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            Image.asset(assetPathToIntro2),
-                            SizedBox(height: 20),
-                            Text(
-                                'This vegan cheese claims to taste like real cheese',
+                    Container(
+                      padding: EdgeInsets.only(top: 120),
+                      margin: EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Image.asset(assetPathToIntro2),
+                              SizedBox(height: 20),
+                              Text(
+                                  'This vegan cheese claims to taste like real cheese',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold)),
+                              SizedBox(height: 20),
+                              Text(
+                                'While plant-based milk has become mainstream, '
+                                'vegan cheese has struggled to get as much endorsement '
+                                'as it\'s challenging to replicate the taste and texture '
+                                'of cheese made from cow milk. Israel-based startup Remilk is '
+                                'trying to offer a solution by creating lab-made dairy protein '
+                                'using microbial fermentation. The protein can help make a vegan, '
+                                'lactose-free, cholesterol-free cheese that tastes like milk cheese. '
+                                'The company recently completed an \$11.3M funding round.',
                                 style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold)),
-                            SizedBox(height: 20),
-                            Text(
-                              'While plant-based milk has become mainstream, '
-                              'vegan cheese has struggled to get as much endorsement '
-                              'as it\'s challenging to replicate the taste and texture '
-                              'of cheese made from cow milk. Israel-based startup Remilk is '
-                              'trying to offer a solution by creating lab-made dairy protein '
-                              'using microbial fermentation. The protein can help make a vegan, '
-                              'lactose-free, cholesterol-free cheese that tastes like milk cheese. '
-                              'The company recently completed an \$11.3M funding round.',
-                              style: TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.normal),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        ),
-                      ],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal),
+                                textAlign: TextAlign.justify,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(top: 120),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            Image.asset(assetPathToIntro3),
-                            SizedBox(height: 20),
-                            Text(
-                                '1 in 4 delivery workers say they have tried your food',
+                    Container(
+                      margin: EdgeInsets.all(12),
+                      padding: EdgeInsets.only(top: 120),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Image.asset(assetPathToIntro3),
+                              SizedBox(height: 20),
+                              Text(
+                                  '1 in 4 delivery workers say they have tried your food',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold)),
+                              SizedBox(height: 20),
+                              Text(
+                                '1-in-4 delivery workers admit they have tried your food, '
+                                'according to 500 delivery workers surveyed by US Foods. '
+                                '28% said they\'d "taken food from an order," while 54% revealed that '
+                                ' they\'ve been "tempted by the smell of the food." Adults who order online '
+                                ' suggested that restaurants use \'tamper-proof\' packaging to '
+                                'prevent deliverers from sampling food. This has raised a '
+                                'cause for concern as many rely on food delivery for sustenance.',
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold)),
-                            SizedBox(height: 20),
-                            Text(
-                              '1-in-4 delivery workers admit they have tried your food, '
-                              'according to 500 delivery workers surveyed by US Foods. '
-                              '28% said they\'d "taken food from an order," while 54% revealed that '
-                              ' they\'ve been "tempted by the smell of the food." Adults who order online '
-                              ' suggested that restaurants use \'tamper-proof\' packaging to '
-                              'prevent deliverers from sampling food. This has raised a '
-                              'cause for concern as many rely on food delivery for sustenance.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.normal),
-                            ),
-                          ],
-                        ),
-                      ],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
+                  ],
+                  options: CarouselOptions(
+                    aspectRatio: 16 / 10,
+                    onPageChanged: (index, reason) {
+                      setState(() {
+                        _current = index;
+                      });
+                    },
+                    viewportFraction: 1,
+                    initialPage: 0,
+                    height: MediaQuery.of(context).size.height / 1.3,
+                    enableInfiniteScroll: false,
+                    reverse: false,
+                    autoPlay: false,
+                    pageSnapping: true,
+                    disableCenter: true,
+                    autoPlayInterval: Duration(seconds: 3),
+                    autoPlayAnimationDuration: Duration(milliseconds: 800),
+                    autoPlayCurve: Curves.fastOutSlowIn,
+                    enlargeCenterPage: true,
+                    scrollDirection: Axis.horizontal,
                   ),
-                ],
-                options: CarouselOptions(
-                  aspectRatio: 16 / 10,
-                  onPageChanged: (index, reason) {
-                    setState(() {
-                      _current = index;
-                    });
-                  },
-                  viewportFraction: 0.8,
-                  initialPage: 0,
-                  height: MediaQuery.of(context).size.height / 1.5,
-                  enableInfiniteScroll: false,
-                  reverse: false,
-                  autoPlay: false,
-                  pageSnapping: true,
-                  disableCenter: true,
-                  autoPlayInterval: Duration(seconds: 3),
-                  autoPlayAnimationDuration: Duration(milliseconds: 800),
-                  autoPlayCurve: Curves.fastOutSlowIn,
-                  enlargeCenterPage: true,
-                  scrollDirection: Axis.horizontal,
                 ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: ['', '', ''].asMap().entries.map((entry) {
-                  return GestureDetector(
-                    onTap: () =>
-                        buttonCarouselController.animateToPage(entry.key),
-                    child: Container(
-                      width: 6.0,
-                      height: 6.0,
-                      margin:
-                          EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: (Theme.of(context).brightness ==
-                                      Brightness.dark
-                                  ? Colors.white
-                                  : Colors.black)
-                              .withOpacity(_current == entry.key ? 0.9 : 0.4)),
-                    ),
-                  );
-                }).toList(),
-              ),
-              getButtonsContainer(),
-            ],
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: ['', '', ''].asMap().entries.map((entry) {
+                    return GestureDetector(
+                      onTap: () =>
+                          buttonCarouselController.animateToPage(entry.key),
+                      child: Container(
+                        width: 6.0,
+                        height: 6.0,
+                        margin: EdgeInsets.symmetric(
+                            vertical: 8.0, horizontal: 4.0),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color:
+                                (Theme.of(context).brightness == Brightness.dark
+                                        ? Colors.white
+                                        : Colors.black)
+                                    .withOpacity(
+                                        _current == entry.key ? 0.9 : 0.4)),
+                      ),
+                    );
+                  }).toList(),
+                ),
+                getButtonsContainer(),
+              ],
+            ),
           ),
           isLoading
               ? Center(
